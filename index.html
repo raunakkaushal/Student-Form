@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="form-container">
+  <div class="center-text">
+    <h2>Student Registration Form</h2>
+  </div>
+  <form action="server.php" method="POST">
+    <div class="form-group">
+      <label for="student-name">Student Name:</label>
+      <input type="text" id="student-name" name="student-name" placeholder="Enter Full Name" required/>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter Email Address" required/>
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone:</label>
+      <input type="number" id="phone" name="phone" placeholder="Enter Mobile Number" required/>
+    </div>
+    <div class="form-group">
+      <label for="course">Course:</label>
+      <select id="course" name="course" required>
+        <option>Select a course</option>
+        <option value="bme">B.Tech ME</option>
+        <option value="bee">B.Tech EE</option>
+        <option value="bcs">B.Tech CS</option>
+        <option value="bcivil">B.Tech Civil</option>
+        <option value="bca">BCA</option>
+        <option value="mca">MCA</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Course Year:</label>
+      <input type="radio" id="first-year" name="course-year" value="first-year"/>
+      <label for="first-year">1st</label>
+      <input type="radio" id="second-year" name="course-year" value="second-year"/>
+      <label for="second-year">2nd</label>
+      <input type="radio" id="third-year" name="course-year" value="third-year"/>
+      <label for="third-year">3rd</label>
+      <input type="radio" id="fourth-year" name="course-year" value="fourth-year"/>
+      <label for="fourth-year">4th</label>
+    </div>
+    <div class="form-group">
+      <label for="linkedin">LinkedIn Profile:</label>
+      <input type="url" id="linkedin" name="linkedin" placeholder="Enter LinkedIn Profile URL"/>
+    </div>
+    <div class="form-group">
+      <label for="about">About Yourself:</label>
+      <textarea id="about" name="about" cols="30" rows="4" placeholder="Tell us about yourself..." required></textarea>
+    </div>
+    <div class="button-container">
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+</div>
+</body>
+</html>
