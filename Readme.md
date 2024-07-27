@@ -14,5 +14,8 @@ This project demonstrates the basic implementation of a web form that interacts 
 
 ## Deployment
 
-The project is deployed on InfinityFree.
+The project is deployed on InfinityFree. You can check it out using the following link:
+
+[Student Form Demo](http://studentform.infinityfreeapp.com/index.php)
+
 Thank you ❤️
